@@ -33,6 +33,7 @@ export default function App() {
       );
       if (confirmed) {
         setItems([]);
+        localStorage.setItem("items", JSON.stringify([]));
       } else {
         return;
       }
